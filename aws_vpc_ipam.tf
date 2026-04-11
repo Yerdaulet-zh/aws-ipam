@@ -1,11 +1,19 @@
-resource "aws_vpc_ipam" "main" {
-  description = "IPAM for EKS Cluster and Language Platform"
-  tier        = "advanced"
+resource "aws_vpc_ipam" "global" {
+  description = "Global Enterprise IPAM"
+
   operating_regions {
     region_name = "eu-central-1"
   }
-  enable_private_gua = true
+
+  operating_regions {
+    region_name = "us-east-1"
+  }
+
+  operating_regions {
+    region_name = "ap-south-1"
+  }
+
   tags = {
-    Name = "primary-ipam"
+    Name = "global-ipam"
   }
 }
