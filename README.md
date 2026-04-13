@@ -34,10 +34,10 @@
 │           ├── aws_vpc_ipam_pool.tf
 │           ├── regions.tf
 │           └── variables.tf
-├── LICENSE
 ├── modules
 │   └── ipv4
 │       └── region
 │           ├── aws_vpc_ipam_pool.tf
 │           └── variables.tf
+├── LICENSE
 └── README.md
