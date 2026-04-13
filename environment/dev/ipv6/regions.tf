@@ -6,11 +6,11 @@ module "dev_regional_pools_ipv6" {
   environment         = "dev"
   region              = each.key
   ipam_scope_id       = var.ipam_scope_id
-  source_ipam_pool_id = var.root_pool_id
+  source_ipam_pool_id = aws_vpc_ipam_pool.ipv6_dev.id
 
   address_family = "ipv6"
 
-  min_netmask     = 56
+  min_netmask     = 64
   max_netmask     = 64
-  default_netmask = 56
+  default_netmask = 64
 }

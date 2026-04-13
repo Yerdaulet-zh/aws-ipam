@@ -5,7 +5,7 @@ resource "aws_vpc_ipam_pool" "ipv6_staging" {
   source_ipam_pool_id = var.root_pool_id
 
   allocation_min_netmask_length     = 56
-  allocation_max_netmask_length     = 56
+  allocation_max_netmask_length     = 64
   allocation_default_netmask_length = 56
 
   tags = {

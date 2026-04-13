@@ -1,6 +1,6 @@
 resource "aws_vpc_ipam_pool_cidr" "ipv6_test" {
   ipam_pool_id   = aws_vpc_ipam_pool.ipv6_test.id
-  netmask_length = 48
+  netmask_length = 56
 
   depends_on = [aws_vpc_ipam_pool.ipv6_test]
 }

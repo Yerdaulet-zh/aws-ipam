@@ -3,10 +3,6 @@ resource "aws_vpc_ipam_pool" "ipv6_root" {
   address_family = "ipv6"
   ipam_scope_id  = var.private_default_scope_id
 
-  allocation_default_netmask_length = 56
-  allocation_min_netmask_length     = 48
-  allocation_max_netmask_length     = 64
-
   auto_import = false
   cascade     = false
 
