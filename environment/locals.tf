@@ -1,0 +1,3 @@
+locals {
+  regions = ["eu-central-1", "us-east-1"]
+}
