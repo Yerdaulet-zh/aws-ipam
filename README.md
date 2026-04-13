@@ -1,14 +1,43 @@
 # aws-ipam
-### The final architecture
-10.0.0.0/8 root
- ├── prod 10.0.0.0/10
- │    ├── eu-central-1 10.0.0.0/12
- │    ├── us-east-1    10.16.0.0/12
- │    └── ap-south-1   10.32.0.0/12
- │
- ├── dev 10.64.0.0/10
- │    ├── eu-central-1 10.64.0.0/12
- │    └── us-east-1    10.80.0.0/12
- │
- ├── staging 10.128.0.0/10
- └── test    10.192.0.0/10
+## The current architecture
+
+```text
+.
+├── environment
+│   ├── aws_vpc_ipam.tf
+│   ├── backend.tf
+│   ├── dev
+│   │   └── ipv4
+│   │       ├── aws_vpc_ipam_pool.tf
+│   │       ├── regions.tf
+│   │       └── variables.tf
+│   ├── locals.tf
+│   ├── main.tf
+│   ├── prod
+│   │   └── ipv4
+│   │       ├── aws_vpc_ipam_pool.tf
+│   │       ├── regions.tf
+│   │       └── variables.tf
+│   ├── provider.tf
+│   ├── root
+│   │   └── ipv4
+│   │       ├── aws_vpc_ipam_pool_cidr.tf
+│   │       ├── aws_vpc_ipam_pool.tf
+│   │       └── variables.tf
+│   ├── staging
+│   │   └── ipv4
+│   │       ├── aws_vpc_ipam_pool.tf
+│   │       ├── regions.tf
+│   │       └── variables.tf
+│   └── test
+│       └── ipv4
+│           ├── aws_vpc_ipam_pool.tf
+│           ├── regions.tf
+│           └── variables.tf
+├── LICENSE
+├── modules
+│   └── ipv4
+│       └── region
+│           ├── aws_vpc_ipam_pool.tf
+│           └── variables.tf
+└── README.md
