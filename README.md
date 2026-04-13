@@ -4,21 +4,21 @@
 ```text
 .
 ├── environment
+│   ├── main.tf
 │   ├── aws_vpc_ipam.tf
+│   ├── locals.tf
 │   ├── backend.tf
+│   ├── provider.tf
 │   ├── dev
 │   │   └── ipv4
 │   │       ├── aws_vpc_ipam_pool.tf
 │   │       ├── regions.tf
 │   │       └── variables.tf
-│   ├── locals.tf
-│   ├── main.tf
 │   ├── prod
 │   │   └── ipv4
 │   │       ├── aws_vpc_ipam_pool.tf
 │   │       ├── regions.tf
 │   │       └── variables.tf
-│   ├── provider.tf
 │   ├── root
 │   │   └── ipv4
 │   │       ├── aws_vpc_ipam_pool_cidr.tf
