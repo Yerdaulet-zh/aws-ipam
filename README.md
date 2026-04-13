@@ -9,35 +9,64 @@
 │   ├── locals.tf
 │   ├── backend.tf
 │   ├── provider.tf
+│   ├── errored.tfstate
 │   ├── dev
-│   │   └── ipv4
+│   │   ├── ipv4
+│   │   │   ├── aws_vpc_ipam_pool_cidr.tf
+│   │   │   ├── aws_vpc_ipam_pool.tf
+│   │   │   ├── regions.tf
+│   │   │   └── variables.tf
+│   │   └── ipv6
+│   │       ├── aws_vpc_ipam_pool_cidr.tf
 │   │       ├── aws_vpc_ipam_pool.tf
 │   │       ├── regions.tf
 │   │       └── variables.tf
 │   ├── prod
-│   │   └── ipv4
+│   │   ├── ipv4
+│   │   │   ├── aws_vpc_ipam_pool_cidr.tf
+│   │   │   ├── aws_vpc_ipam_pool.tf
+│   │   │   ├── regions.tf
+│   │   │   └── variables.tf
+│   │   └── ipv6
+│   │       ├── aws_vpc_ipam_pool_cidr.tf
 │   │       ├── aws_vpc_ipam_pool.tf
 │   │       ├── regions.tf
 │   │       └── variables.tf
 │   ├── root
-│   │   └── ipv4
+│   │   ├── ipv4
+│   │   │   ├── aws_vpc_ipam_pool_cidr.tf
+│   │   │   ├── aws_vpc_ipam_pool.tf
+│   │   │   └── variables.tf
+│   │   └── ipv6
 │   │       ├── aws_vpc_ipam_pool_cidr.tf
 │   │       ├── aws_vpc_ipam_pool.tf
 │   │       └── variables.tf
 │   ├── staging
-│   │   └── ipv4
+│   │   ├── ipv4
+│   │   │   ├── aws_vpc_ipam_pool_cidr.tf
+│   │   │   ├── aws_vpc_ipam_pool.tf
+│   │   │   ├── regions.tf
+│   │   │   └── variables.tf
+│   │   └── ipv6
+│   │       ├── aws_vpc_ipam_pool_cidr.tf
 │   │       ├── aws_vpc_ipam_pool.tf
 │   │       ├── regions.tf
 │   │       └── variables.tf
 │   └── test
-│       └── ipv4
+│       ├── ipv4
+│       │   ├── aws_vpc_ipam_pool_cidr.tf
+│       │   ├── aws_vpc_ipam_pool.tf
+│       │   ├── regions.tf
+│       │   └── variables.tf
+│       └── ipv6
+│           ├── aws_vpc_ipam_pool_cidr.tf
 │           ├── aws_vpc_ipam_pool.tf
 │           ├── regions.tf
 │           └── variables.tf
-├── modules
-│   └── ipv4
-│       └── region
-│           ├── aws_vpc_ipam_pool.tf
-│           └── variables.tf
 ├── LICENSE
+├── modules
+│   └── region
+│       ├── aws_vpc_ipam_pool_cidr.tf
+│       ├── aws_vpc_ipam_pool.tf
+│       └── variables.tf
 └── README.md
