@@ -10,7 +10,7 @@ module "prod_regional_pools_ipv6" {
 
   address_family = "ipv6"
 
-  min_netmask     = 64
+  min_netmask     = 56
   max_netmask     = 64
   default_netmask = 64
 }
