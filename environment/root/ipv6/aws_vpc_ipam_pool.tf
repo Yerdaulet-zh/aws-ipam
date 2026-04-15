@@ -5,6 +5,9 @@ resource "aws_vpc_ipam_pool" "ipv6_root" {
 
   publicly_advertisable = false
 
+  allocation_min_netmask_length = 44
+  allocation_max_netmask_length = 64
+
   auto_import = false
   cascade     = false
 
