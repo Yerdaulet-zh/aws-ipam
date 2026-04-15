@@ -10,7 +10,7 @@ module "staging_regional_pools_ipv6" {
 
   address_family = "ipv6"
 
-  min_netmask     = 56
+  min_netmask     = 48
   max_netmask     = 64
   default_netmask = 64
   depends_on      = [aws_vpc_ipam_pool.ipv6_staging]
