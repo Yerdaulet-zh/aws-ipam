@@ -14,6 +14,10 @@ variable "source_ipam_pool_id" {
   type = string
 }
 
+variable "pool_cidr_netmask_length" {
+  type = number
+}
+
 variable "min_netmask" {
   type = number
 }

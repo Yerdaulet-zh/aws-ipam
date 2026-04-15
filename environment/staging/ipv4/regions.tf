@@ -10,6 +10,8 @@ module "staging_regional_pools_ipv4" {
 
   address_family = "ipv4"
 
+  pool_cidr_netmask_length = 16
+
   min_netmask     = 16
   max_netmask     = 26
   default_netmask = 22
