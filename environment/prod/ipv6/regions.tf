@@ -10,6 +10,8 @@ module "prod_regional_pools_ipv6" {
 
   address_family = "ipv6"
 
+  pool_cidr_netmask_length = 48
+
   min_netmask     = 48
   max_netmask     = 64
   default_netmask = 48
