@@ -1,4 +1,30 @@
 # aws-ipam
+
+<h1 align="center">AWS IPAM Terraform Manager</h1>
+
+<p>
+  This repository provides a <strong>granular, resource-level Terraform implementation</strong> for managing <strong>AWS VPC IP Address Manager (IPAM)</strong> across a multi-account, multi-region organization.
+</p>
+
+<hr />
+
+<h3>Key Features</h3>
+
+<ul>
+  <li>
+    <strong>Hierarchical Pool Design:</strong> Implements a multi-tier nesting strategy (<code>Root → Environment → Region</code>) for both IPv4 and IPv6, ensuring strict CIDR governance.
+  </li>
+  <li>
+    <strong>Modular Architecture:</strong> Utilizes a dedicated regional module with <code>for_each</code> logic to maintain a <strong>DRY</strong> (Don't Repeat Yourself) codebase across Dev, Staging, and Production environments.
+  </li>
+  <li>
+    <strong>Enterprise Governance:</strong> Automates the deployment of IPAM Resource Discovery, Admin Account delegation, and Organizational sharing for centralized visibility.
+  </li>
+  <li>
+    <strong>Absolute Control:</strong> Eschews high-level pre-made modules in favor of resource-level definitions to demystify AWS integrations and provide maximum flexibility.
+  </li>
+</ul>
+
 ## The final architecture
 
 ```text
