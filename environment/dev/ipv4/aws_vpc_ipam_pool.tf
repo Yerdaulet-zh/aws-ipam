@@ -4,7 +4,7 @@ resource "aws_vpc_ipam_pool" "dev" {
   ipam_scope_id       = var.ipam_scope_id
   source_ipam_pool_id = var.root_pool_id
 
-  allocation_min_netmask_length     = 16
+  allocation_min_netmask_length     = 12
   allocation_max_netmask_length     = 22
   allocation_default_netmask_length = 20
 

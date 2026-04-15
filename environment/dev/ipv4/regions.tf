@@ -10,7 +10,7 @@ module "dev_regional_pools_ipv4" {
 
   address_family = "ipv4"
 
-  min_netmask     = 20
+  min_netmask     = 16
   max_netmask     = 26
   default_netmask = 22
 }

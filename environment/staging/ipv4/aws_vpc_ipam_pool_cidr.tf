@@ -1,6 +1,6 @@
 resource "aws_vpc_ipam_pool_cidr" "staging" {
   ipam_pool_id   = aws_vpc_ipam_pool.staging.id
-  netmask_length = 16
+  netmask_length = 12
 }
 
 output "staging_pool_cidr" {
